@@ -203,7 +203,7 @@ def generate_email(probability, input_dict, explanation, surname):
     """
 
     raw_response = client.chat.completions.create(
-        model="llama3-groq-8b-8192-tool-use-preview",
+        model="openai/gpt-oss-120b",
         messages=[
             {
                 "role": "user",
